@@ -137,6 +137,6 @@ resource "aws_security_group" "nomad-sg" {
 
   tags = {
       Terraform = "true"
-      Turbonomic = "true"
+      Nakay = "true"
   }
 }

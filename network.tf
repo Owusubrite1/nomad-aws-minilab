@@ -19,7 +19,7 @@ resource "aws_route_table" "nomad-lab-public-crt" {
     tags = {
     	Name = "nomad-lab"
     	Terraform = "true"
-    	Turbonomic = "true"
+    	Nakay = "true"
   	}
 }
 
