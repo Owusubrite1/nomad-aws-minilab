@@ -6,7 +6,7 @@ provider "aws" {
 
 terraform {
   	backend "remote" {
-    	organization = "Turbonomic"
+    	organization = "Nakay"
 
     workspaces {
       	name = "nomad-aws-minilab"
