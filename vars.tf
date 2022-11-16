@@ -34,7 +34,7 @@ variable "nomad_node_count" {
 variable "allowed_ip_network" {
 	description = "Networks allowed in security group for ingress rules"
 	type		= list(any)
-	default		= ["70.162.60.114/32","10.0.0.0/16"]
+	default		= ["137.152.0.16/32","10.0.0.0/16"]
 }
 
 variable "new_relic_key" {
