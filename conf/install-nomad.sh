@@ -68,8 +68,8 @@ sudo chmod a+w /etc/nomad.d
 
 # Nomad config file copy
 sudo mkdir -p /tmp/nomad
-sudo curl https://raw.githubusercontent.com/Owusubrite1/nomad-in-aws/master/conf/nomad/client.hcl -o /tmp/nomad/client.hcl
-sudo cp /tmp/nomad/client.hcl /etc/nomad.d/client.hcl
+sudo curl https://raw.githubusercontent.com/Owusubrite1/nomad-in-aws/master/conf/nomad/server.hcl -o /tmp/nomad/server.hcl
+sudo cp /tmp/nomad/server.hcl /etc/nomad.d/server.hcl
 
 # Configure Nomad Autostart
 sudo curl https://raw.githubusercontent.com/Owusubrite1/nomad-in-aws/master/conf/nomad/nomad.service -o /tmp/nomad/nomad.service
