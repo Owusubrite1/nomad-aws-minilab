@@ -26,10 +26,30 @@ variable "nomad_node_ami_id" {
 	description = "AMI ID to use for Nomad nodes"
 }
 
+#variable "nomad_node_count" {
+ # description = "The number of server nodes (should be 3 or 5)"
+  #type        = number
+#}
+
+
 variable "nomad_node_count" {
   description = "The number of server nodes (should be 3 or 5)"
   type        = number
+  default     = 3
 }
+
+variable "nomad_client_count" {
+  description = "The number of server nodes (should be 3 or 5)"
+  type        = number
+  default     = 3
+}
+
+variable "nomad_server_count" {
+  description = "The number of server nodes (should be 3 or 5)"
+  type        = number
+  default     = 3
+}
+
 
 variable "allowed_ip_network" {
 	description = "Networks allowed in security group for ingress rules"
