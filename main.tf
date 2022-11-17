@@ -12,7 +12,7 @@ resource "aws_instance" "nomad-node" {
     tags = {
         Terraform = "true"
         ProvisionedBy = "Project Terra"
-        Turbonomic = "true"
+        Nakay = "true"
         Name = "nomad-server-node-${count.index}"
     }
 }
