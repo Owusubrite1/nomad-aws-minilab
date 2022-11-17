@@ -8,6 +8,8 @@ variable "aws_secret_key" {
 
 variable "aws_region" {
 	description = "The region name to deploy into"
+	type        = string
+    default     = "us-east-1"
 }
 
 variable "aws_key_fingerprint" {
@@ -16,14 +18,23 @@ variable "aws_key_fingerprint" {
 
 variable "aws_key_name" {
 	description = "SSH key name"
+	type        = string
+    default     = "server1"
 }
 
 variable "nomad_node_instance_size" {
 	description = "EC2 instance type/size for Nomad nodes"
+	type        = string
+  # default     = "t2.small"
+    default     = "t2.micro"
 }
 
 variable "nomad_node_ami_id" {
 	description = "AMI ID to use for Nomad nodes"
+	 type        = string
+  #default     = "ami-064ff912f78e3e561" # Amazon Linux
+  #default     = "ami-00978328f54e31526" # Ubuntu Linux
+   default      = "ami-0b0ea68c435eb488d" #By Bright
 }
 
 #variable "nomad_node_count" {
@@ -54,12 +65,9 @@ variable "nomad_server_count" {
 variable "allowed_ip_network" {
 	description = "Networks allowed in security group for ingress rules"
 	type		= list(any)
-	default		= ["137.152.0.16/32","10.0.0.0/16"]
+	default		= ["70.162.60.114/32","10.0.0.0/16"]
 }
 
-variable "new_relic_key" {
-	description = "New Relic key if needed for automatic add of EC2 nodes to monitoring"
-}
 
 variable "az_map" {
 	type = map
