@@ -34,7 +34,7 @@ variable "nomad_node_ami_id" {
 	 type        = string
   #default     = "ami-064ff912f78e3e561" # Amazon Linux
   #default     = "ami-00978328f54e31526" # Ubuntu Linux
-   default      = "ami-0b0dcb5067f052a63" #By Bright
+  # default      = "ami-0b0dcb5067f052a63" #By Bright
 }
 
 #variable "nomad_node_count" {
